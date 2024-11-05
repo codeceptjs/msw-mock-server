@@ -49,6 +49,7 @@ You can seamlessly integrate MockServer with other helpers like REST or Playwrig
   helpers: {
     REST: {...},
     MockServer: {
+      require: '@codeceptjs/msw-mock-server',
       // default mock server config
       port: 9393,
       host: 'mock-service.test',
