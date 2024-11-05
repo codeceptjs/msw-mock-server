@@ -1,0 +1,42 @@
+{
+  "name": "@codeceptjs/msw-mock-server",
+  "version": "1.0.0",
+  "description": "Mock Server helper for CodeceptJS - powered by msw",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "buildcjs": "rollup index.js --file index.cjs --format cjs",
+    "docs": "npx documentation readme index.js --section=MockServer --shallow"
+  },
+  "author": "kobenguyent@gmail.com",
+  "license": "MIT",
+  "type": "module",
+  "jest": {
+    "transform": {}
+  },
+  "dependencies": {
+    "msw": "^2.6.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "rollup": "^4.24.4",
+    "documentation": "11.0.1"
+  },
+  "exports": {
+    "import": "./index.js",
+    "require": "./index.cjs"
+  },
+  "files": [
+    "index.cjs",
+    "index.js",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeceptjs/msw-mock-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/codeceptjs/msw-mock-server/issues"
+  },
+  "homepage": "https://github.com/codeceptjs/msw-mock-server#readme"
+}
